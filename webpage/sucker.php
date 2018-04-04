@@ -7,7 +7,7 @@
 </head>
 <body>
 	<?php
-		if($_REQUEST["name"] !== NULL && $_REQUEST["creditCard"] !== NULL && (isset($_POST['submit']) && !isset($_POST['selectSection'])) && !isset($_REQUEST["card"])){?>
+		if($_REQUEST["name"] !== NULL && $_REQUEST["creditCard"] !== NULL && (isset($_POST['submit']) && !empty($_POST['selectSection'])) && !isset($_REQUEST["card"])){?>
 				<h1>Sorry</h1>
 				<p>You didn't fill out form completely. <a href="buyagrade.php">Try again?</a> </p>
 			<?php }

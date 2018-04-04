@@ -31,18 +31,10 @@
 	  <dt>Section: </dt>
 	  <dd>
 		<select name="selectSection">
-			<option disabled selected hidden> Section </option>
+			<option selected hidden> Section </option>
 			<option value="MA">MA</option>
 			<option value="MH">MH</option>
 		</select>
-<?php
-if(isset($_POST['submit']) && isset($_POST['selectSection'])){
-	$selected_val = $_POST['selectSection'];  // Storing Selected Value In Variable
-}
-elseif(isset($_POST['submit']) && !isset($_POST['selectSection'])) { ?>
-	<span class="warning">Please, provide section info. </span>
-<?php }
-?>
 	  </dd>
   	  <dt>Credit Card: </dt>
 	  <dd>
